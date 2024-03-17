@@ -23,6 +23,13 @@ functions:
       - httpApi:
           path: goodbye
           method: get
+  
+  getAllPatient:
+    handler: src/handler.getAllPatient
+    events:
+      - httpApi:
+          path: patient
+          method: get
 
 plugins:
   - serverless-offline
